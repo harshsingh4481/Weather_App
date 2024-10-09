@@ -11,7 +11,7 @@ const App = () => {
     try {
       setError('');
       const response = await axios.get(
-        `http://localhost:5000/weather/${city}`
+        `https://weather-app-backend-one-brown.vercel.app/weather/${city}`
       );
       setWeatherData(response.data);
     } catch (err) {
